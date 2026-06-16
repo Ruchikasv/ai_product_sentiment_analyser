@@ -62,7 +62,7 @@ setLoadingChat({
         [product]: false,
       });
 
-  setMessage("❌ AI failed to respond. Please try again.");
+  alert("❌ AI failed to respond. Please try again.");
     });
 
 };
@@ -350,7 +350,7 @@ return ( <div className="min-h-screen bg-black text-white"> <div className="p-8"
      .then((response) => {
   console.log(response.data);
 
-  setMessage("✅ Review Added Successfully!");
+  alert("✅ Review Added Successfully!");
 
   setNewProduct("");
   setNewReview("");
@@ -397,7 +397,7 @@ return ( <div className="min-h-screen bg-black text-white"> <div className="p-8"
     axios
       .post("http://127.0.0.1:5000/upload_csv", formData)
       .then((response) => {
-        setMessage(`✅ ${response.data.imported} reviews imported successfully!`);
+        alert(`✅ ${response.data.imported} reviews imported successfully!`);
   console.log(response.data);
 
   axios
@@ -511,7 +511,7 @@ return ( <div className="min-h-screen bg-black text-white"> <div className="p-8"
         product: product,
       })
       .then(() => {
-        setMessage("🗑 Product Deleted Successfully!");
+        alert("🗑 Product Deleted Successfully!");
         setSelectedProduct("");
 
         axios

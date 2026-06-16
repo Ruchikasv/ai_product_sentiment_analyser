@@ -95,7 +95,7 @@ AI Model:
 
 ```bash
 git clone <your-repository-url>
-cd product-review-analyzer
+cd ai_product_sentiment_analyser
 ```
 
 ---
@@ -123,7 +123,7 @@ venv\Scripts\activate
 ```
 
 Install dependencies:
-
+these ll take time please wait....
 ```bash
 pip install flask
 pip install flask-cors
@@ -153,7 +153,7 @@ Install Ollama:
 https://ollama.com
 
 Pull model:
-
+**compulsoryyyy**
 ```bash
 ollama pull llama3.2:1b
 ```
@@ -165,7 +165,7 @@ ollama list
 ```
 
 Start Ollama server:
-
+may not work
 ```bash
 ollama serve
 ```
@@ -185,7 +185,7 @@ Install dependencies:
 ```bash
 npm install
 ```
-
+ignore audit issues
 Install required packages:
 
 ```bash

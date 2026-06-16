@@ -1,6 +1,5 @@
 from random import sample
 from urllib import response
-from dotenv import load_dotenv
 import os
 from flask import Flask, request, send_file
 import sqlite3
